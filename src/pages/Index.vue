@@ -1,7 +1,6 @@
 <template>
   <Layout>
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Logo" src="~/assets/Logo.svg" width="135"/>
 
     <h1 class="bg-red-500">Hello, world!</h1>
 
