@@ -3,7 +3,7 @@
     <nav class="flex items-center justify-between flex-wrap p-1 bg-gray-200">
       <div class="flex items-center flex-shrink-0 text-white mr-6 ml-4">
         <g-link to="/">
-          <g-image alt="Logo" src="~/assets/Logo.svg" width="100"/>
+          <g-image alt="Logo" src="~/assets/Logo.svg" width="135"/>
         </g-link>
       </div>
       <div class="block sm:hidden">
@@ -11,34 +11,31 @@
           @click="toggle"
           class="flex items-center px-3 py-2 border rounded text-gray-600 border-gray-700 hover:text-white hover:border-white"
         >
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-          </svg>
+          <font-awesome icon="bars"/>
         </button>
       </div>
       <div
         :class="open ? 'block': 'hidden'"
-        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
+        class="w-full flex-grow sm:flex sm:items-center sm:w-auto"
       >
-        <div class="text-sm lg:flex-grow"></div>
+        <div class="text-sm sm:flex-grow"></div>
         <div>
           <g-link
             to="/"
-            class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 mr-4"
+            class="block mt-4 sm:inline-block sm:mt-0 text-gray-600 hover:text-gray-900 mr-4"
           >Pagrindinis</g-link>
           <g-link
             to="/About"
-            class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 mr-4"
+            class="block mt-4 sm:inline-block sm:mt-0 text-gray-600 hover:text-gray-900 mr-4"
           >Apie</g-link>
           <g-link
             to="/Blogas"
-            class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 mr-4"
+            class="block mt-4 sm:inline-block sm:mt-0 text-gray-600 hover:text-gray-900 mr-4"
           >Blogas</g-link>
         </div>
       </div>
     </nav>
-    <Background/>
+    <Background id="background"/>
     <slot/>
   </div>
 </template>
@@ -71,7 +68,7 @@ export default {
 </script>
 
 <style>
-svg {
+#background {
   position: absolute;
   top: 50%;
   left: 50%;
