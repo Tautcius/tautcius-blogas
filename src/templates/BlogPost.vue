@@ -1,6 +1,17 @@
 <template>
   <Layout>
-    <div class="markdown-body" v-html="$page.blogPost.content"/>
+    <button
+      class="ml-64 mt-1 bg-gray-300 hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded"
+    >
+      <g-link to="/blogas">
+        <font-awesome icon="angle-double-left"/>
+        <span>&nbsp;Visi postai</span>
+      </g-link>
+    </button>
+    <div
+      class="markdown-body text-justify container max-w-5xl m-auto p-4 sm:p-2"
+      v-html="$page.blogPost.content"
+    />
   </Layout>
 </template>
 
@@ -22,20 +33,4 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.markdown-body {
-  box-sizing: border-box;
-  min-width: 200px;
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 45px;
-}
-
-@media (max-width: 767px) {
-  .markdown-body {
-    padding: 15px;
-  }
-}
-</style>
 
