@@ -24,5 +24,28 @@ module.exports = {
     svgRule.uses.clear();
     svgRule.use("vue-svg-loader").loader("vue-svg-loader");
   },
-  plugins: []
+  transformers: {
+    remark: {
+      externalLinksTarget: "_blank",
+      externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+      anchorClassName: "icon icon-link",
+      plugins: [
+        // ...global plugins
+      ]
+    }
+  },
+
+  plugins: [
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "blogas/**/*.md",
+        typeName: "BlogPost",
+        route: "/blogas/:year/:month/:day/:slug",
+        remark: {
+          plugins: []
+        }
+      }
+    }
+  ]
 };

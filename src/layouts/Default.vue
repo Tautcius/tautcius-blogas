@@ -29,7 +29,7 @@
             class="block mt-4 sm:inline-block sm:mt-0 text-gray-600 hover:text-gray-900 mr-4"
           >Apie</g-link>
           <g-link
-            to="/Blogas"
+            to="/blogas"
             class="block mt-4 sm:inline-block sm:mt-0 text-gray-600 hover:text-gray-900 mr-4"
           >Blogas</g-link>
         </div>

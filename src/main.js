@@ -3,6 +3,7 @@
 
 import DefaultLayout from "~/layouts/Default.vue";
 import "~/main.css";
+import "../node_modules/github-markdown-css/github-markdown.css";
 
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
