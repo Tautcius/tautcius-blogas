@@ -79,6 +79,12 @@ export default {
   width: 100vw;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+	#background {
+		  height: 100vh;
+ 		  width: auto;
+	}
+ }
 .path {
   animation: draw 20s infinite;
   animation-timing-function: linear;

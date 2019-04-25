@@ -1,23 +1,31 @@
 <template>
-  <Layout>
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-
-    <h1 class="bg-red-500">Hello, world!</h1>
-
-    <p
-      class="text-white bg-blue-500"
-    >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores</p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
+  <Layout class="h-screen overflow-hidden">
+    <div class="container mx-auto -mt-20 h-full flex justify-center items-center font-mono">
+       <div class="w-2/3">
+    <h1 class="text-5xl p-10">Tautciaus Blogas</h1>
+    <h2 class="text-3xl p-6 ml-10">Apie <vue-typer
+  :text='["kompiuterius","programavimą","internetą"]'
+  :repeat='Infinity'
+  :shuffle='false'
+  initial-action='typing'
+  :pre-type-delay='70'
+  :type-delay='200'
+  :pre-erase-delay='1500'
+  :erase-delay='100'
+  erase-style='backspace'
+  :erase-on-complete='false'
+  caret-animation='blink'
+></vue-typer>
+    </h2>
+    <h2 class="text-3xl p-6 ml-10">ir viską kas man įdomu.</h2>
+    </div>
+    </div>
   </Layout>
 </template>
 
 <script>
 export default {
-  metaInfo: {
+    metaInfo: {
     title: "Pagrindinis"
   }
 };
