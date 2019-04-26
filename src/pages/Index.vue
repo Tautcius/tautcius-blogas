@@ -3,18 +3,14 @@
     <div class="container mx-auto -mt-20 h-full flex justify-center items-center font-mono">
        <div class="w-2/3">
     <h1 class="text-5xl p-10">Tautciaus Blogas</h1>
-    <h2 class="text-3xl p-6 ml-10">Apie <VueTyper
+    <h2 class="text-3xl p-6 ml-10">Apie
+    <ClientOnly>
+    <VueTyper
   :text='words'
-  :repeat='Infinity'
-  :shuffle='false'
-  initial-action='typing'
-  :pre-type-delay='70'
+   initial-action='typing'
   :type-delay='200'
-  :pre-erase-delay='1500'
-  :erase-delay='100'
-  erase-style='backspace'
-  :erase-on-complete='false'
   caret-animation='blink' />
+  </ClientOnly>
     </h2>
     <h2 class="text-3xl p-6 ml-10">ir viską kas man įdomu.</h2>
     </div>
@@ -42,4 +38,30 @@ export default {
 };
 </script>
 
+<style>
+@keyframes Type {
+  from {
+    transform: translateX(-5px);
+  }
+  to {
+    color: currentColor;
+  }
+}
 
+.vue-typer {
+  display: inline-block;
+  text-align: left;
+  white-space: nowrap;
+}
+.vue-typer .custom.char {
+  color: #fff;
+}
+.vue-typer .custom.char.typed {
+  animation: Type 0.3s;
+}
+.vue-typer .custom.caret {
+  background-color: rgba(255, 255, 255, .5);
+  margin: 0 2px;
+  width: 2px;
+}
+</style>

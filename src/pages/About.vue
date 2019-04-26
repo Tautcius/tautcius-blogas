@@ -10,7 +10,7 @@
     <a href="https://www.netlifycms.org/" class="link">Netlify CMS <font-awesome class="text-xs align-text-top" icon="external-link-alt"/></a>. Jei kam kada bus įdomu kaip viskas ir kur yra galėsiu detaliau parodyti.</P>
     <h2 class="text-3xl font-medium">mane...</h2>
     <p class="text-xl">Trumpai kas as ir apie ką čia vikas</P>
-    <Timeline/>
+    <!-- <Timeline/> -->
     <h2 class="text-3xl font-medium">Kontaktai</h2>
 
     <Kontaktai/>
@@ -19,22 +19,23 @@
 </template>
 
 <script>
-import Timeline from "~/components/Timeline.vue"
+// import Timeline from "~/components/Timeline.vue"
 import Kontaktai from "~/components/Kontaktai.vue"
 export default {
   metaInfo: {
     title: 'Apie'
   },
   components : {
-      Timeline,
+    //   Timeline,
       Kontaktai
   }
 }
 </script>
 <style>
 .link {
-    @apply no-underline text-blue-500;
+    @apply text-blue-500;
 }
+
 .link:hover {
     @apply underline;
      }
