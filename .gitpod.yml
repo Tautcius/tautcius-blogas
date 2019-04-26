@@ -5,4 +5,4 @@ ports:
 - port: 8081
 - port: 9000
 tasks:
-- command: yarn install && yarn yarn develop --host 0.0.0.0
+- command: yarn install && yarn develop --host 0.0.0.0
