@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="flex items-center justify-between flex-wrap p-1 bg-gray-200">
+    <nav class="flex items-center justify-between flex-wrap p-1 bg-transparent">
       <div class="flex items-center flex-shrink-0 text-white mr-6 ml-4">
         <g-link to="/">
           <g-image alt="Logo" src="~/assets/Logo.svg" width="135"/>
