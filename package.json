@@ -11,7 +11,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/vue-fontawesome": "^0.1.6",
-    "@fullhuman/postcss-purgecss": "^1.1.0",
+    "@fullhuman/postcss-purgecss": "^1.2.0",
     "@gridsome/source-filesystem": "^0.3.0",
     "@gridsome/transformer-remark": "^0.2.1",
     "github-markdown-css": "^3.0.1",
