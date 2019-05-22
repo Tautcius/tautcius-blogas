@@ -11,10 +11,10 @@
                 <div>{{ post.node.excerpt }}</div>
                 <div class="flex row justify-between mr-2 ml-2">
                   <div>{{ post.node.date }}</div>
-                  <!-- <div>
-                    {{ post.node.timeToRead }}
+                  <div>
+                    {{ post.node.timeToRead }} min
                     <font-awesome icon="clock"/>
-                  </div>-->
+                  </div>
                 </div>
               </g-link>
             </li>
@@ -34,6 +34,7 @@ query Posts {
         path
         date(format: "YYYY MM DD")
         id
+        timeToRead
       }
     }
   }
