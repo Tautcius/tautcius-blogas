@@ -27,12 +27,22 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "blogas/**/*.md",
+        path: "Blogas/**/*.md",
         typeName: "BlogPost",
         route: "/blogas/:year/:month/:day/:slug",
         remark: {
-          plugins: []
+          plugins: ["@gridsome/remark-prismjs"]
         }
+      }
+    },
+    {
+      use: "gridsome-plugin-tailwindcss",
+      options: {
+        purgeConfig: {},
+        presetEnvConfig: {},
+        shouldPurge: true,
+        shouldImport: true,
+        shouldTimeTravel: true
       }
     }
   ]

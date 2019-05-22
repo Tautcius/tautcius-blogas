@@ -11,7 +11,7 @@
                 <div>{{ post.node.excerpt }}</div>
                 <div class="flex row justify-between mr-2 ml-2">
                   <div>{{ post.node.date }}</div>
-                 <!-- <div>
+                  <!-- <div>
                     {{ post.node.timeToRead }}
                     <font-awesome icon="clock"/>
                   </div>-->
@@ -30,7 +30,6 @@ query Posts {
   posts: allBlogPost {
     edges {
       node {
-        title
         excerpt
         path
         date(format: "YYYY MM DD")

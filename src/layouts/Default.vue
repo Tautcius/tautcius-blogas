@@ -25,7 +25,7 @@
             class="block mt-4 sm:inline-block sm:mt-0 text-gray-600 hover:text-gray-900 mr-4"
           >Pagrindinis</g-link>
           <g-link
-            to="/About"
+            to="/about"
             class="block mt-4 sm:inline-block sm:mt-0 text-gray-600 hover:text-gray-900 mr-4"
           >Apie</g-link>
           <g-link
@@ -80,11 +80,11 @@ export default {
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
-	#background {
-		  height: 100vh;
- 		  width: auto;
-	}
- }
+  #background {
+    height: 100vh;
+    width: auto;
+  }
+}
 .path {
   animation: draw 20s infinite;
   animation-timing-function: linear;
