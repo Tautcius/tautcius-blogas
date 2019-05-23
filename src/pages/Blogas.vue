@@ -31,6 +31,7 @@ query Posts {
     edges {
       node {
         excerpt
+        title
         path
         date(format: "YYYY MM DD")
         id
