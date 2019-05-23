@@ -4,7 +4,7 @@ excerpt: Dolore minim officia ut culpa.
 date: "2019-05-01"
 ---
 
-## Pirmas Postas
+# Pirmas Postas
 
 ## cia kazkas
 
@@ -44,7 +44,7 @@ if (isAwesome) {
 
 And if you'd like to use syntax highlighting, include the language:
 
-```vue
+```javascript
 if (isAwesome) { return true; }
 ```
 
