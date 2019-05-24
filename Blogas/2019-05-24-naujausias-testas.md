@@ -1,7 +1,7 @@
 ---
 title: naujausias testas
 excerpt: asdasdas asdasd asdasd as a
-date: 2019 05 15
+date: "2019-05-15"
 ---
 asdasfs`d
 a
