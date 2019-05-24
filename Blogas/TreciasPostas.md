@@ -1,7 +1,7 @@
 ---
 title: Trecias Postas
 excerpt: Daksjdsdgfsd adsflkasd  laksdja sd la sd alsd asd asd a
-date: "2019-05-23"
+date: 2019-05-23
 ---
 
 ## Pirmas Postas

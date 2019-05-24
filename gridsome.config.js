@@ -44,6 +44,9 @@ module.exports = {
         shouldImport: true,
         shouldTimeTravel: true
       }
-    }
+    },
+    {
+      use: `gridsome-plugin-netlify-cms`
+    } 
   ]
 };

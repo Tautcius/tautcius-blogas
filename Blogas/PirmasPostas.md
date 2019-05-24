@@ -1,7 +1,7 @@
 ---
 title: Pirmas Postas
 excerpt: Dolore minim officia ut culpa.
-date: "2019-05-01"
+date: 2019-05-01
 ---
 
 # Pirmas Postas

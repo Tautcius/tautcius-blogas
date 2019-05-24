@@ -17,6 +17,8 @@
     "@gridsome/transformer-remark": "^0.3.2",
     "github-markdown-css": "^3.0.1",
     "gridsome": "^0.6.2",
+    "gridsome-plugin-netlify-cms": "^1.0.6",
+    "netlify-cms": "^2.9.1",
     "vue-svg-loader": "^0.12.0",
     "vue-typer": "^1.2.0"
   },
