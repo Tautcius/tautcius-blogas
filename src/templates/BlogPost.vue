@@ -34,3 +34,5 @@ export default {
 };
 </script>
 
+<style src="../../node_modules/github-markdown-css/github-markdown.css"/>
+
