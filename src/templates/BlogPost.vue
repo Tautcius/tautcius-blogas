@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <button
-      class="ml-64 mt-1 bg-gray-300 hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded"
+      class="block xl:ml-64 lg:ml-32 ml-4 mt-1 bg-gray-300 hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded"
     >
       <g-link to="/blogas">
         <font-awesome icon="angle-double-left"/>
